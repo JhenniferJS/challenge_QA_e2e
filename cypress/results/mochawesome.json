@@ -1,0 +1,143 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-11-24T17:27:26.177Z",
+    "end": "2022-11-24T17:27:41.707Z",
+    "duration": 15530,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7eac95be-46be-4f2c-8289-f2ffe4156365",
+      "title": "",
+      "fullFile": "cypress/integration/tests.spec.js",
+      "file": "cypress/integration/tests.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6060b245-3ba2-4eeb-9665-c8916a496197",
+          "title": "Loan simulations",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Loan simulation - 6 installments",
+              "fullTitle": "Loan simulations Loan simulation - 6 installments",
+              "timedOut": null,
+              "duration": 8442,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const amountInReal = data.amount.toLocaleString('pt-br', {\n  minimumFractionDigits: 2\n});\ncy.setAmountSlider(data.amount);\ncy.get(_loanElements.LoanElements.amountSliderValue).should('contain.text', `R$ ${amountInReal}`);\ncy.setMonthSlider(data.installments);\ncy.get(_loanElements.LoanElements.monthSliderValue).should('contain.text', `${data.installments} meses`);\ncy.get(_loanElements.LoanElements.installmentsOutput).should('contain.text', `${data.installments}x`);\ncy.get(_loanElements.LoanElements.installmentValueOutput).should('contain.text', `R$ ${data.installmentsValue}`);",
+              "err": {},
+              "uuid": "084b315a-568c-47e0-bed8-42939d278977",
+              "parentUUID": "6060b245-3ba2-4eeb-9665-c8916a496197",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Loan simulation - 12 installments",
+              "fullTitle": "Loan simulations Loan simulation - 12 installments",
+              "timedOut": null,
+              "duration": 3036,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const amountInReal = data.amount.toLocaleString('pt-br', {\n  minimumFractionDigits: 2\n});\ncy.setAmountSlider(data.amount);\ncy.get(_loanElements.LoanElements.amountSliderValue).should('contain.text', `R$ ${amountInReal}`);\ncy.setMonthSlider(data.installments);\ncy.get(_loanElements.LoanElements.monthSliderValue).should('contain.text', `${data.installments} meses`);\ncy.get(_loanElements.LoanElements.installmentsOutput).should('contain.text', `${data.installments}x`);\ncy.get(_loanElements.LoanElements.installmentValueOutput).should('contain.text', `R$ ${data.installmentsValue}`);",
+              "err": {},
+              "uuid": "1a1a8a75-9bc9-4cfb-b5d8-8fa7cfa09aa8",
+              "parentUUID": "6060b245-3ba2-4eeb-9665-c8916a496197",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Loan simulation - 24 installments",
+              "fullTitle": "Loan simulations Loan simulation - 24 installments",
+              "timedOut": null,
+              "duration": 3816,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const amountInReal = data.amount.toLocaleString('pt-br', {\n  minimumFractionDigits: 2\n});\ncy.setAmountSlider(data.amount);\ncy.get(_loanElements.LoanElements.amountSliderValue).should('contain.text', `R$ ${amountInReal}`);\ncy.setMonthSlider(data.installments);\ncy.get(_loanElements.LoanElements.monthSliderValue).should('contain.text', `${data.installments} meses`);\ncy.get(_loanElements.LoanElements.installmentsOutput).should('contain.text', `${data.installments}x`);\ncy.get(_loanElements.LoanElements.installmentValueOutput).should('contain.text', `R$ ${data.installmentsValue}`);",
+              "err": {},
+              "uuid": "39924b90-1d00-448b-94dd-42eec5bfad1e",
+              "parentUUID": "6060b245-3ba2-4eeb-9665-c8916a496197",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "084b315a-568c-47e0-bed8-42939d278977",
+            "1a1a8a75-9bc9-4cfb-b5d8-8fa7cfa09aa8",
+            "39924b90-1d00-448b-94dd-42eec5bfad1e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 15294,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
