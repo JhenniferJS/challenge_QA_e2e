@@ -21,6 +21,7 @@
 ## Testes e2e - Cypress
 
 Para a realização dos teste automatizados, foi utilizada a ferramenta Cypress.
+No arquivo `melhorias.txt` contém descrição de bug e sugestão de melhoria para o site em questão.
 
 ### Pre requisitos
 
