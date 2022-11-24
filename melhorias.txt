@@ -1,0 +1,6 @@
+Foi detectado um bug no cenário de empréstimo no valor de R$ 6.000 em 24x, onde, de acordo com os dados 
+fornecidos, a parcela deveria ter o valor de R$ 347,89, porém apresenta o valor de R$ 387,89. É necessário
+o ajuste da aplicação para que os valores sejam iguais ao esperado.
+Como sujestão de melhoria, o slider referente ao valor do empréstimo seria mais intuitivo para o usuário
+se fosse um campo livre para escrever o valor desejado, ao invés de valores pré definidos. Por exemplo: Se o
+usuário deseja um empréstimo de R$ 20.000,00, este precisa ficar movendo o slider até chegar ao valor desejado.
